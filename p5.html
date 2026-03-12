@@ -1,0 +1,105 @@
+<!-- <html>
+<script>
+    const a =
+    {
+        "A": "LJU",
+        "B": ["CSE", "IT", "CE"],
+        "C": [
+            {
+                "D": "Hi",
+                "E": ['are', 4, { 'F': ['semester', 'We'] }]
+            }
+        ],
+        "G": {
+            "H": "students",
+            "I": ["of", "!"]
+        },
+        "J": [{ "K": "Python", "L": "branch" }, "FSD-2"]
+    }
+
+
+    console.log(a.C[0].D+a.G.I[1]+" "+a.C[0].E[2].F[1]+" "+a.C[0].E[0]+" "+a.G.H)
+</script>
+
+</html> -->
+
+<html>
+  <body>
+    <h1 id="msg"></h1>
+    <script>
+      const obj = {
+        "A": "LJU",
+        "B": ["CSE", "IT", "CE"],
+        "C": [
+          {
+            "D": "Hi",
+            "E": ["are", 4, { "F": ["semester", "We"] }]
+          }
+        ],
+        "G": {
+          "H": "students",
+          "I": ["of", "!"]
+        },
+        "J": [{ "K": "Python", "L": "branch" }, "FSD-2"]
+      };
+
+      // Construct sentence
+      const sentence =
+        obj.C[0].D + obj.G.I[1] + " " + // "Hi!"
+        obj.C[0].E[2].F[1] + " " +       // "We"
+        obj.C[0].E[0] + " " +            // "are"
+        obj.G.H + " " +                  // "students"
+        obj.G.I[0] + " " +               // "of"
+        obj.C[0].E[2].F[0] + " " +       // "semester"
+        obj.C[0].E[1] + " " +            // "4"
+        obj.G.I[0] + " " +               // "of"
+        obj.B[0] + " " +                 // "CSE"
+        obj.J[0].L;                      // "branch"
+
+      document.getElementById("msg").innerText = sentence;
+    </script>
+  </body>
+</html>
+<html>
+  <script>
+    const a = {
+      "Name": "Ramesh",
+      "Subects": ["Maths", "Scence", "chemistry"],
+      "Grade": { "Type": "marks", "Total": [88, 90, 99, 87] },
+      "Range": { "opt": "100", "type": ["secure", "subject", "class"] },
+      "achive": [{ "Rank": "rank", "place": [1, 2, 3] }, { "Ordinalindicator": "st" }, "12"],
+      "joints": ["outof", "got", "and"]
+    };
+
+    console.log(
+      a.Name + " " + a.joints[1] + " " + a.Grade.Total[2] + " " +
+      a.joints[0] + " " + a.Range.opt + " " + a.Grade.Type + "\n" +
+      a.Range.type[0] + " " + a.achive[0].place[0] + a.achive[1].Ordinalindicator + " " +
+      a.achive[0].Rank + "."
+    );
+  </script>
+</html>
+<html>
+  <body>
+    <h1 id="carMsg"></h1>
+    <script>
+      const myObj = {
+        "name": "John",
+        "age": 30,
+        "cars": [
+          { "name": "Ford", "models": ["Fiesta", "Focus", "Mustang"] },
+          { "name": "BMW", "models": ["320", "X3", "X5"] },
+          { "name": "Fiat", "models": ["500", "Panda"] }
+        ]
+      };
+
+      const sentence1 =
+        myObj.name + " has " +
+        myObj.cars[1].name + "- " +
+        myObj.cars[1].models[1] + " at the age of " +
+        myObj.age;
+
+      document.getElementById("carMsg").innerText = sentence1;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<!--write one json string with date property and string date in indian standered time while cliking-->
+<html>
+    <p id="demo"></p>
+    <button onclick="fun()">show</button>
+    <script>
+        function fun(){
+            let text='{"name":"abc","place":"ahmedabad","DOB":"2006-09-24"}'
+            let obj=JSON.parse(text)
+            obj.DOB=new Date(obj.DOB)
+            document.getElementById("demo").innerHTML="Birthday of "+obj.name+" is "+obj.DOB
+        }
+    </script>
+</html>

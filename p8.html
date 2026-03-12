@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function add(a,b)
+            {
+                document.getElementById("demo").innerHTML=(a+b)
+            }
+            a=2
+            b=5
+            setInterval(function(){
+                add(++a,++b)
+            },1000)
+        </script>
+    </body>
+</html>
