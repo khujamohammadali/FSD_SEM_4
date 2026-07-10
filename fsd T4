@@ -1,0 +1,6 @@
+25 marks mcq  =  9m + 16m (1/1.5 marks)
+25 descriptive = 5*5m (unit 9 = 10 marks, unit 10 = 15 marks)
+
+unit 9 : queries, crud operations, operators, aggregation for pipeline and analysis(may be 2 questions of 5 marks),
+unit 10 : indexing(simple, compund and partial + query fire + in descrptive and mcq), schema validations(atleast enter one document),
+ 	 react + node/express + mongodb connectivity (write 2 files, no need to write app.jsx)
